@@ -3,6 +3,7 @@ import Botao from '../componentes/Botao';
 import Cronometro from '../componentes/cronometro';
 import Formulario from '../componentes/Formulario';
 import Lista from '../componentes/Lista';
+import ListaConcluidos from '../componentes/ListaConcluidos';
 import { ITarefa } from '../types/tarefa';
 import style from './App.module.scss';
 
@@ -41,6 +42,7 @@ function App() {
         tarefas={tarefas}
         selecionaTarefa={selecionaTarefa}
         />
+      <ListaConcluidos />
       <Cronometro 
         selecionado={selecionado}
         finalizarTarefa={finalizarTarefa}

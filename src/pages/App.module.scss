@@ -5,6 +5,7 @@
     "nova-tarefa"
     "cronometro"
     "tarefas"
+    "concluidos"
     ;
     row-gap: 24px;
     min-width: 320px;
@@ -17,14 +18,14 @@
   
     @media screen and (min-width:1280px)  {
       grid-template-areas: 
-      "nova-tarefa tarefas"
-      "cronometro tarefas"
+      "nova-tarefa tarefas concluidos"
+      "cronometro tarefas concluidos"
       ;
       column-gap: 64px;
       grid-template-rows: min-content min-content;
-      grid-template-columns: 750px 300px;
-      justify-content: center;
-      align-content: center;
-      padding: 64px;
+      grid-template-columns: 650px 200px 200px;
+      justify-content: end;
+      // align-content: center;
+      padding: 100px;
     }
   }
